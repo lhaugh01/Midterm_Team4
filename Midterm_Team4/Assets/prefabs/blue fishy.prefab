@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9113578063900247914}
   - component: {fileID: -633873958620541435}
   - component: {fileID: -6949952750397442042}
+  - component: {fileID: -3163787796591505614}
   m_Layer: 0
   m_Name: blue fishy
   m_TagString: Untagged
@@ -158,3 +159,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.68, y: 4.22}
   m_EdgeRadius: 0
+--- !u!114 &-3163787796591505614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7785076612963438019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 115c746f26cae7845b1e6ef112e5479b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpForceX: 2
+  jumpForceY: 5
