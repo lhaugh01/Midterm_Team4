@@ -264,6 +264,7 @@ GameObject:
   - component: {fileID: -633873958620541435}
   - component: {fileID: -6949952750397442042}
   - component: {fileID: -3163787796591505614}
+  - component: {fileID: 7608257575570286531}
   m_Layer: 0
   m_Name: Fishy_MainPrefab
   m_TagString: Untagged
@@ -374,6 +375,18 @@ MonoBehaviour:
   jumpForceX: 2
   jumpForceY: 5
   splashVFX: {fileID: 6954528888856844663, guid: 41f0ba079f0be4004b6ebb960daf877f, type: 3}
+--- !u!114 &7608257575570286531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7785076612963438019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df2ba65e39f184b919b67f125c189e53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8512562041823122806
 GameObject:
   m_ObjectHideFlags: 0
