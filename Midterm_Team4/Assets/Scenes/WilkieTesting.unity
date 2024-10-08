@@ -406,7 +406,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3f28e0862cdf8f4db6ff19861c6c8bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fishPrefab: {fileID: 9167778915979050271, guid: 36ab06b00a7ffcf4f8f3170ae639a9b1, type: 3}
+  fishPrefabs:
+  - {fileID: 7785076612963438019, guid: bf5fda058a0e3432d8c476a29d758875, type: 3}
+  - {fileID: 120493104222094589, guid: 1b241f0d14d5446f5867042d5a5da9a1, type: 3}
+  - {fileID: 9167778915979050271, guid: 36ab06b00a7ffcf4f8f3170ae639a9b1, type: 3}
+  - {fileID: 2744248161194743536, guid: 06585e1cbada7498ab61635a2adb9738, type: 3}
+  - {fileID: 3510066164939007462, guid: 81194025ba6884f79b1ad4303fe27d51, type: 3}
+  - {fileID: 6424163976293627493, guid: d412e81e697fa4b15b4689d18055d99f, type: 3}
+  - {fileID: 3798774575259148087, guid: e2aa12bc95f7149abbd5bf1be421fa96, type: 3}
+  - {fileID: 564445699318925508, guid: 127f9f3a1dc97423e9f54df4629cfe6b, type: 3}
   spawnInterval: 1
   oceanWidth: 18
   minY: -4

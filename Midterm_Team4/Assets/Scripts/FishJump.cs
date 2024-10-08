@@ -13,12 +13,17 @@ public class FishJump : MonoBehaviour
     private bool isDescending = false;  // Flag to check if the fish is coming down
     //private float tolerance = 0.1f;
 
+    //spawn splash
+    public GameObject splashVFX;
+    //public AudioSource splashSFX;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         startY = transform.position.y;  // Store the starting X position
         Debug.Log("Fish spawned at Y: " + startY);
         Jump();
+        PlayFX();
     }
 
     void Jump()
@@ -44,7 +49,15 @@ public class FishJump : MonoBehaviour
         // Check if the fish has crossed back over the starting X position and is descending
         if (isDescending && (transform.position.y <= startY))
         {
+            PlayFX();
             Destroy(gameObject);  // Despawn the fish once it crosses back over its starting point
         }
     }
+
+    void PlayFX(){
+        Instantiate (splashVFX, transform.position, Quaternion.identity);
+        //splashSFX.Play();
+    }
+
+
 }
