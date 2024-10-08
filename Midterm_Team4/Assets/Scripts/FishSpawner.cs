@@ -45,10 +45,13 @@ public class FishSpawner : MonoBehaviour
     public float oceanWidth = 16f;  // Width of your ocean
     public float minY = -4f; // Minimum Y position
     public float maxY = -1f; // Maximum Y position
+    public GameHandler gameHandlerObj;
 
-    void Start()
-    {
+    void Start(){
         StartCoroutine(SpawnFish());
+          if (GameObject.FindWithTag("GameHandler") != null){
+               gameHandlerObj = GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>();
+          }
     }
 
     IEnumerator SpawnFish()
@@ -69,6 +72,8 @@ public class FishSpawner : MonoBehaviour
 
             // Spawn the random fish at the random position
             Instantiate(selectedFish, spawnPosition, Quaternion.identity);
+            gameHandlerObj.AddFish(1);
+            
         }
     }
 }
