@@ -164,6 +164,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fishy_small_variant Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 7785076612963438019, guid: bf5fda058a0e3432d8c476a29d758875, type: 3}
+      propertyPath: m_TagString
+      value: small
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 8512562041823122806, guid: bf5fda058a0e3432d8c476a29d758875, type: 3}

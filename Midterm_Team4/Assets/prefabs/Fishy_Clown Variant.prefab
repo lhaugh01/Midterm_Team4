@@ -208,6 +208,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fishy_Clown Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 6909723142029315057, guid: 881aa2286e3c74e6a86e9c992e71b51f, type: 3}
+      propertyPath: m_TagString
+      value: big
+      objectReference: {fileID: 0}
     - target: {fileID: 7492185185000458496, guid: 881aa2286e3c74e6a86e9c992e71b51f, type: 3}
       propertyPath: jumpForceX
       value: 10
