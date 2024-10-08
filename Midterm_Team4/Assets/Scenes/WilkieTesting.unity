@@ -671,13 +671,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fishPrefabs:
+  - {fileID: 2005061360570594085, guid: bc816de86eb84432fa593fba4ce0ce25, type: 3}
   - {fileID: 6909723142029315057, guid: 881aa2286e3c74e6a86e9c992e71b51f, type: 3}
   - {fileID: 7602925161066667544, guid: d29cb894694c14230a3a256bf415e03a, type: 3}
-  - {fileID: 2005061360570594085, guid: bc816de86eb84432fa593fba4ce0ce25, type: 3}
-  spawnInterval: 0.5
+  spawnInterval: 0.4
   oceanWidth: 18
-  minY: -4
-  maxY: -1
+  minY: -3
+  maxY: 1
   gameHandlerObj: {fileID: 0}
 --- !u!4 &1834629312
 Transform:
