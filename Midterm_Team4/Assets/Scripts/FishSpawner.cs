@@ -62,13 +62,33 @@ public class FishSpawner : MonoBehaviour
             yield return new WaitForSeconds(spawnInterval);
 
             // Choose a random position along the width of the ocean
-            float randomX = Random.Range(-oceanWidth / 2f, oceanWidth / 2f);
+            float randomX = Random.Range(2f, oceanWidth / 2f);
+            float direction = Random.Range(-1f, 1f);
+            if (direction <= 0f)
+            {
+                randomX *= -1;
+            }
             float randomY = Random.Range(minY, maxY);  // Random Y position between minY and maxY
             Vector2 spawnPosition = new Vector2(randomX, randomY);
 
-            // Choose a random fish prefab
-            int randomIndex = Random.Range(0, fishPrefabs.Length);
-            GameObject selectedFish = fishPrefabs[randomIndex];
+            // Choose a random, weighted fish prefab
+            int index = 0;
+            float randomFish = Random.Range(0f, 100f);
+            if(randomFish < 52.5f)
+            {
+                index = 0;
+            } 
+            else if(randomFish < 85f)
+            {
+                index = 1;
+            }
+            else
+            {
+                index = 2;
+            }
+            GameObject selectedFish = fishPrefabs[index];
+            //int randomIndex = Random.Range(0, fishPrefabs.Length);
+            //GameObject selectedFish = fishPrefabs[randomIndex];
 
             // Spawn the random fish at the random position
             Instantiate(selectedFish, spawnPosition, Quaternion.identity);
