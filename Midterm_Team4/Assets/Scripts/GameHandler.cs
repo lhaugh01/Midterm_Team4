@@ -26,7 +26,7 @@ public class GameHandler : MonoBehaviour {
 
       void UpdateScore(){
             Text scoreTextB = scoreText.GetComponent<Text>();
-            scoreTextB.text = "Fish Caught: " + playerScore;
+            scoreTextB.text = "Fish Fortune: $" + playerScore;
             Text scoreTextC = maxScoreText.GetComponent<Text>();
             scoreTextC.text = "Total Fish: " + possibleScore;
       }
