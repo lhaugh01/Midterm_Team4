@@ -92,8 +92,25 @@ public class FishSpawner : MonoBehaviour
 
             // Spawn the random fish at the random position
             Instantiate(selectedFish, spawnPosition, Quaternion.identity);
-            gameHandlerObj.AddFish(1);
+            //int scoreValue = GetScoreValueByTag(selectedFish);
+            int scoreValue = 1;
+            gameHandlerObj.AddFish(scoreValue);
             
+        }
+    }
+    private int GetScoreValueByTag()
+    {
+        // Using the tag of the current GameObject
+        switch (tag) 
+        {
+            case "small":
+                return 3; // Score for small fish
+            case "medium":
+                return 2; // Score for medium fish
+            case "big":
+                return 1; // Score for big fish
+            default:
+                return 0; // Default score if the tag doesn't match
         }
     }
 }
