@@ -94,7 +94,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1822417973910151193, guid: bf5fda058a0e3432d8c476a29d758875, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822417973910151193, guid: bf5fda058a0e3432d8c476a29d758875, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822417973910151193, guid: bf5fda058a0e3432d8c476a29d758875, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822417973910151193, guid: bf5fda058a0e3432d8c476a29d758875, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1822417973910151193, guid: bf5fda058a0e3432d8c476a29d758875, type: 3}
       propertyPath: m_LocalPosition.x
@@ -139,6 +151,10 @@ PrefabInstance:
     - target: {fileID: 7785076612963438019, guid: bf5fda058a0e3432d8c476a29d758875, type: 3}
       propertyPath: m_Name
       value: Fishy_MainPrefab Variant 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7785076612963438019, guid: bf5fda058a0e3432d8c476a29d758875, type: 3}
+      propertyPath: m_TagString
+      value: coal
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

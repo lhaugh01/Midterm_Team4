@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 20
   m_Sprite: {fileID: 21300000, guid: 7c54734323d6448fdb12a59388c3e7f0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -94,7 +94,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1822417973910151193, guid: bf5fda058a0e3432d8c476a29d758875, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822417973910151193, guid: bf5fda058a0e3432d8c476a29d758875, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822417973910151193, guid: bf5fda058a0e3432d8c476a29d758875, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822417973910151193, guid: bf5fda058a0e3432d8c476a29d758875, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1822417973910151193, guid: bf5fda058a0e3432d8c476a29d758875, type: 3}
       propertyPath: m_LocalPosition.x
@@ -139,6 +151,10 @@ PrefabInstance:
     - target: {fileID: 7785076612963438019, guid: bf5fda058a0e3432d8c476a29d758875, type: 3}
       propertyPath: m_Name
       value: Fishy_MainPrefab (1) Variant 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7785076612963438019, guid: bf5fda058a0e3432d8c476a29d758875, type: 3}
+      propertyPath: m_TagString
+      value: seaweed
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

@@ -36,11 +36,19 @@ public class DestroyFish : MonoBehaviour
                 return 2; // Score for medium fish
             case "big":
                 return 1; // Score for big fish
+            case "bottle": // Negative score for bad items
+            case "baggy":
+            case "urchin":
+            case "coal":
+            case "seaweed":
+            case "dead":
+                return -1; // Subtract score for these items
             default:
                 return 0; // Default score if the tag doesn't match
         }
     }
 }
+
 
 
 
