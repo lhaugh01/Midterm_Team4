@@ -37,6 +37,10 @@ public class GameHandler : MonoBehaviour {
                 SceneManager.LoadScene("WilkieTesting");
       }
 
+      public void MainMenu(){
+                SceneManager.LoadScene("Main Scene");
+      }
+
       public void QuitGame(){
                 #if UNITY_EDITOR
                 UnityEditor.EditorApplication.isPlaying = false;
