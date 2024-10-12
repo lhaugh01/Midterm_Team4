@@ -5,6 +5,10 @@ using UnityEngine;
 public class DestroyFish : MonoBehaviour
 {
     public GameHandler gameHandlerObj;
+    public static int num_small_fish = 0;
+    public static int num_medium_fish = 0;
+    public static int num_big_fish = 0;
+    public static int num_trash= 0;
 
     void Start()
     {
@@ -17,6 +21,20 @@ public class DestroyFish : MonoBehaviour
     private void OnMouseDown()
     {
         int scoreValue = GetScoreValueByTag();
+
+        if (scoreValue == 3) {
+            num_small_fish++;
+            Debug.Log("adding small!");
+        } else if (scoreValue == 2) {
+            num_medium_fish++;
+            Debug.Log("adding med!");
+        } else if (scoreValue == 1) {
+            num_big_fish++;
+            Debug.Log("adding big!");
+        } else {
+            num_trash++;
+            Debug.Log("adding trash!");
+        }
         gameHandlerObj.AddScore(scoreValue);
         
         // Optionally play a sound when an object is destroyed
