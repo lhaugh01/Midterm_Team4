@@ -8,6 +8,12 @@ TagManager:
   - medium
   - big
   - small
+  - bottle
+  - seaweed
+  - urchin
+  - dead
+  - baggy
+  - coal
   layers:
   - Default
   - TransparentFX
