@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WilkieTesting.unity
     guid: fe8473d7cc5ff5840a366e709e0dd555
+  - enabled: 1
+    path: Assets/Scenes/Loss Scene.unity
+    guid: dcc659b5bde518245b0a5e6725c8fe1a
+  - enabled: 1
+    path: Assets/Scenes/Pause Scene.unity
+    guid: f374bb9fe223d6e4caeeb4e2fd0abcda
   m_configObjects: {}
