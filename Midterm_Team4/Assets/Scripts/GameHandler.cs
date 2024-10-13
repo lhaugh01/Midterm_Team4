@@ -29,7 +29,7 @@ public class GameHandler : MonoBehaviour {
             Text scoreTextB = scoreText.GetComponent<Text>();
             scoreTextB.text = "Fish Fortune: $" + playerScore;
             Text scoreTextC = maxScoreText.GetComponent<Text>();
-            scoreTextC.text = "Total Fish: " + possibleScore;
+            scoreTextC.text = "Total Items: " + possibleScore;
       }
 
       public void RestartGame(){
@@ -48,6 +48,7 @@ public class GameHandler : MonoBehaviour {
       public void ResumeGame(){
                 SceneManager.LoadScene("WilkieTesting");
       }
+      
 
       public void QuitGame(){
                 #if UNITY_EDITOR
