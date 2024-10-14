@@ -12,10 +12,10 @@ public class FishSpawner : MonoBehaviour
     public GameHandler gameHandlerObj;
 
     void Start(){
+        if (GameObject.FindWithTag("GameHandler") != null){
+             gameHandlerObj = GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>();
+        }
         StartCoroutine(SpawnFish());
-          if (GameObject.FindWithTag("GameHandler") != null){
-               gameHandlerObj = GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>();
-          }
     }
 
     IEnumerator SpawnFish()
