@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class DestroyFish : MonoBehaviour
 {
-    public GameHandler gameHandlerObj;
+    private GameHandler gameHandlerObj;
+    public GameObject particlesPrefab;
 
     void Start()
     {
@@ -28,10 +29,10 @@ public class DestroyFish : MonoBehaviour
             Debug.Log("adding trash!");
         }
         gameHandlerObj.AddScore(scoreValue);
-        
+
         // Optionally play a sound when an object is destroyed
         // gameObject.GetComponent<AudioSource>().Play();
-        
+        Instantiate(particlesPrefab, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 

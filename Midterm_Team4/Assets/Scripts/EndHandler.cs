@@ -15,12 +15,14 @@ public class LossSceneHandler : MonoBehaviour
     void Start()
     {
         // Retrieve and display the data from GameData
-        smallFishText.text = GameData.caughtSmall + "/" + GameData.totalSmall;
-        Debug.Log(GameData.caughtSmall + "/" + GameData.totalSmall);
-        medFishText.text = GameData.caughtMed + "/" + GameData.totalMed;
-        bigFishText.text = GameData.caughtBig + "/" + GameData.totalBig;
-        trashFishText.text = GameData.caughtTrash + "/" + GameData.totalTrash;
-        scoreText.text = "Total Earned: $" + GameData.playerScore;
-        totalItemsText.text = "Total Items: " + GameData.totalItems;
+        smallFishText.text = GameHandler.caughtSmall + "/" +
+                            GameHandler.totalSmall;
+        Debug.Log(GameHandler.caughtSmall + "/" + GameHandler.totalSmall);
+        medFishText.text = GameHandler.caughtMed + "/" + GameHandler.totalMed;
+        bigFishText.text = GameHandler.caughtBig + "/" + GameHandler.totalBig;
+        trashFishText.text = GameHandler.caughtTrash + "/" +
+                                GameHandler.totalTrash;
+        scoreText.text = "Total Earned: $" + GameHandler.playerScore;
+        totalItemsText.text = "Total Items: " + GameHandler.totalItems;
     }
 }

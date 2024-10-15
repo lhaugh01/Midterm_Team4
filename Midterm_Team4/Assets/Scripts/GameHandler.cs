@@ -13,30 +13,30 @@ public class GameHandler : MonoBehaviour {
       public GameObject bigFishText;
       public GameObject trashFishText;
       
-      public static class GameData
-      {
-            public static int playerScore;
-            public static int caughtTrash;
-            public static int caughtBig;
-            public static int caughtMed;
-            public static int caughtSmall;
-            public static int totalTrash;
-            public static int totalBig;
-            public static int totalMed;
-            public static int totalSmall;
-            public static int totalItems;
-      }
+      // public static class GameData
+      // {
+      //       public static int staticPlayerScore;
+      //       public static int staticCaughtTrash;
+      //       public static int staticCaughtBig;
+      //       public static int staticCaughtMed;
+      //       public static int staticCaughtSmall;
+      //       public static int staticTotalTrash;
+      //       public static int staticTotalBig;
+      //       public static int staticTotalMed;
+      //       public static int staticTotalSmall;
+      //       public static int staticTotalItems;
+      // }
 
-      private int playerScore = 0;
-      private int caughtTrash = 0;
-      private int caughtBig = 0;
-      private int caughtMed = 0;
-      private int caughtSmall = 0;
-      private int totalTrash = 0;
-      private int totalBig = 0;
-      private int totalMed = 0;
-      private int totalSmall = 0;
-      private int totalItems = 0;
+      public static int playerScore = 0;
+      public static int caughtTrash = 0;
+      public static int caughtBig = 0;
+      public static int caughtMed = 0;
+      public static int caughtSmall = 0;
+      public static int totalTrash = 0;
+      public static int totalBig = 0;
+      public static int totalMed = 0;
+      public static int totalSmall = 0;
+      public static int totalItems = 0;
  
       void Start(){
             UpdateScore();
@@ -77,9 +77,9 @@ public class GameHandler : MonoBehaviour {
 
       void UpdateScore(){
             Text scoreTextB = scoreText.GetComponent<Text>();
-            scoreTextB.text = "Fish Fortune: $" + playerScore;
+            scoreTextB.text = "" + playerScore;
             Text scoreTextC = maxScoreText.GetComponent<Text>();
-            scoreTextC.text = "Total Items: " + totalItems;
+            scoreTextC.text = "" + totalItems;
       
       }
 
@@ -127,18 +127,30 @@ public class GameHandler : MonoBehaviour {
       public void endGame()
       {
             // Store the game results into GameData
-            GameData.playerScore = playerScore;
-            Debug.Log("Final Score: " + GameData.playerScore);
-            GameData.caughtTrash = caughtTrash;
-            GameData.caughtBig = caughtBig;
-            GameData.caughtMed = caughtMed;
-            GameData.caughtSmall = caughtSmall;
-            GameData.totalTrash = totalTrash;
-            GameData.totalBig = totalBig;
-            GameData.totalMed = totalMed;
-            GameData.totalSmall = totalSmall;
-            GameData.totalItems = totalItems;
+            // int tempInt = playerScore;
+            // GameData.staticPlayerScore = tempInt;
+            // tempInt = caughtTrash;
+            // GameData.staticCaughtTrash = tempInt;
+            // tempInt = caughtBig;
+            // GameData.staticCaughtBig = tempInt;
+            // tempInt = caughtMed;
+            // GameData.staticCaughtMed = tempInt;
+            // tempInt = caughtSmall;
+            // GameData.staticCaughtSmall = tempInt;
+            // tempInt = totalTrash;
+            // GameData.staticTotalTrash = tempInt;
+            // tempInt = totalBig;
+            // GameData.totalBig = tempInt;
+            // tempInt = totalMed;
+            // GameData.totalMed = tempInt;
+            // tempInt = totalSmall;
+            // GameData.totalSmall = tempInt;
+            // tempInt = totalItems;
+            // GameData.totalItems = tempInt;
 
+            
+            // Debug.Log("Final Score: " + GameData.staticPlayerScore);
+      
             SceneManager.LoadScene("Loss Scene");
       }
 

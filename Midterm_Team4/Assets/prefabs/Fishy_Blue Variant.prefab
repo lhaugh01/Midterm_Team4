@@ -180,6 +180,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 7608257575570286531, guid: bf5fda058a0e3432d8c476a29d758875, type: 3}
+      propertyPath: particlesPrefab
+      value: 
+      objectReference: {fileID: 4827262106090231862, guid: 653fcff86fe6db743ae8372136623fd5, type: 3}
     - target: {fileID: 7785076612963438019, guid: bf5fda058a0e3432d8c476a29d758875, type: 3}
       propertyPath: m_Name
       value: Fishy_Blue Variant
