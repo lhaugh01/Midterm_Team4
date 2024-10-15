@@ -18,6 +18,5 @@ public class DeleteMe : MonoBehaviour{
     IEnumerator DeleteThisDelay(){
         yield return new WaitForSeconds(delayTime);
         Destroy(gameObject);
-        gameHandlerObj.AddScore(0);
     }
 }

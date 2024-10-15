@@ -79,7 +79,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Quit
+  m_Text: 
 --- !u!1 &2932520531861437419
 GameObject:
   m_ObjectHideFlags: 0
@@ -159,7 +159,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: To Game
+  m_Text: 
 --- !u!1 &3001034853865169374
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,8 +197,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 111.5228, y: -8.6906}
-  m_SizeDelta: {x: 258.9544, y: 295.8567}
+  m_AnchoredPosition: {x: -18.73581, y: -8.6906}
+  m_SizeDelta: {x: 519.4716, y: 295.8567}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6924894317199500096
 CanvasRenderer:
@@ -228,7 +228,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: a78ae991b6534442dbece112cefe6047, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -275,8 +275,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 41.5, y: -100.618904}
-  m_SizeDelta: {x: 300, y: 80}
+  m_AnchoredPosition: {x: 121.85904, y: -79.714745}
+  m_SizeDelta: {x: 563.5229, y: 226.8199}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3477419886688407966
 CanvasRenderer:
@@ -299,7 +299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -446,8 +446,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 41.5, y: -48.618896}
-  m_SizeDelta: {x: 300, y: 80}
+  m_AnchoredPosition: {x: 128.44875, y: 36.19123}
+  m_SizeDelta: {x: 558.4663, y: 241.8784}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4538812177047730584
 CanvasRenderer:
@@ -470,7 +470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

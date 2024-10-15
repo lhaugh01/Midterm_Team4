@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Scene.unity
     guid: a050420f26706e447a31d9963c10e5fa
   - enabled: 1
-    path: Assets/Scenes/WilkieTesting.unity
+    path: Assets/Scenes/Fishing Scene.unity
     guid: fe8473d7cc5ff5840a366e709e0dd555
   - enabled: 1
     path: Assets/Scenes/Loss Scene.unity
