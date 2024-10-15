@@ -5,7 +5,8 @@ using UnityEngine;
 public class FishSpawner : MonoBehaviour
 {
     public GameObject[] fishPrefabs;  // Array to hold different fish prefabs
-    public float spawnInterval = 1f;  // Time between spawns
+    public float spawnMin = .3f;  // Lower limit on spawn delay
+    public float spawnMax = .5f;  // Upper limit on spawn delay
     public float oceanWidth = 16f;  // Width of your ocean
     public float minY = -4f; // Minimum Y position
     public float maxY = -1f; // Maximum Y position
@@ -23,7 +24,8 @@ public class FishSpawner : MonoBehaviour
         while (true)
         {
             // Wait for the specified interval
-            yield return new WaitForSeconds(spawnInterval);
+            float randomDelay = Random.Range(spawnMin, spawnMax);
+            yield return new WaitForSeconds(randomDelay);
 
             // Choose a random position along the width of the ocean
             float randomX = Random.Range(2f, oceanWidth / 2f);

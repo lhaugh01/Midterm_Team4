@@ -529,7 +529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8075308e4adff8e418a7eb4bf6a517f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 25
+  timeRemaining: 30
   timerText: {fileID: 534160791}
   gameHandlerObj: {fileID: 1058052985}
 --- !u!1001 &1058052984
@@ -1185,7 +1185,8 @@ MonoBehaviour:
   - {fileID: 7685457377364354662, guid: c4db906e8ba8d480a850a4808f51d8d7, type: 3}
   - {fileID: 8058021986294170881, guid: 93e8fde3d34f143c1ac93055a16f897b, type: 3}
   - {fileID: 6552600623521147000, guid: 567be91f96a734600840e66b1efb991c, type: 3}
-  spawnInterval: 0.4
+  spawnMin: 0.2
+  spawnMax: 0.5
   oceanWidth: 18
   minY: -3
   maxY: 1
