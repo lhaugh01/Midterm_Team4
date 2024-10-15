@@ -1,3 +1,8 @@
+using System.Collections.Generic;
+using System.Collections;
+using UnityEngine;
+using UnityEngine.UI;
+
 public static class GameData
 {
     public static int playerScore;

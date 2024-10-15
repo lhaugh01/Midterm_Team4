@@ -164,6 +164,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7608257575570286531, guid: bf5fda058a0e3432d8c476a29d758875, type: 3}
+      propertyPath: particlesPrefab
+      value: 
+      objectReference: {fileID: 1014069638167414643, guid: 0fc4f61cd6bee72429f7aee42b77fa37, type: 3}
     - target: {fileID: 7785076612963438019, guid: bf5fda058a0e3432d8c476a29d758875, type: 3}
       propertyPath: m_Name
       value: Fishy_MainPrefab (1) Variant 1

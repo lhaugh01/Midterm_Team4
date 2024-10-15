@@ -9,7 +9,7 @@ public class FishSpawner : MonoBehaviour
     public float oceanWidth = 16f;  // Width of your ocean
     public float minY = -4f; // Minimum Y position
     public float maxY = -1f; // Maximum Y position
-    public GameHandler gameHandlerObj;
+    private GameHandler gameHandlerObj;
 
     void Start(){
         if (GameObject.FindWithTag("GameHandler") != null){
@@ -82,17 +82,19 @@ public class FishSpawner : MonoBehaviour
             //GameObject selectedFish = fishPrefabs[randomIndex];
 
             // Spawn the random fish at the random position
-            Instantiate(selectedFish, spawnPosition, Quaternion.identity);
-            //int scoreValue = GetScoreValueByTag(selectedFish);
-            int scoreValue = 1;
+            GameObject newFish = Instantiate(selectedFish, spawnPosition,
+                                            Quaternion.identity);
+            int scoreValue = GetScoreValueByTag(newFish);
+            Debug.Log("Score Value is: " + scoreValue);
+            // int scoreValue = 1;
             gameHandlerObj.AddFish(scoreValue);
             
         }
     }
-    private int GetScoreValueByTag()
+    private int GetScoreValueByTag(GameObject fish)
     {
         // Using the tag of the current GameObject
-        switch (tag) 
+        switch (fish.tag) 
         {
             case "small":
                 return 3; // Score for small fish
