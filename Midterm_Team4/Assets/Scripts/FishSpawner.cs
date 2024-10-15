@@ -38,42 +38,30 @@ public class FishSpawner : MonoBehaviour
             // Choose a random, weighted fish prefab
             int index = 0;
             float randomFish = Random.Range(0f, 100f);
-            if(randomFish < 11.1f)
+            if(randomFish < 16.6f)
             {
                 index = 0;
             } 
-            else if(randomFish < 22.2f)
+            else if(randomFish < 33.3f)
             {
                 index = 1;
             }
-            else if (randomFish < 33.3f)
+            else if (randomFish < 49.9f)
             {
                 index = 2;
             }
-            else if (randomFish < 44.4f)
+            else if (randomFish < 66.5f)
             {
                 index = 3;
             }
-            else if (randomFish < 55.5f)
+            else if (randomFish < 83.1f)
             {
                 index = 4;
             }
-            else if (randomFish < 66.6f)
-            {
+            else {
                 index = 5;
             }
-            else if (randomFish < 77.7f)
-            {
-                index = 6;
-            }
-            else if (randomFish < 88.8f)
-            {
-                index = 7;
-            }
-            else
-            {
-                index = 8;
-            }
+            
             
             
 
@@ -104,9 +92,6 @@ public class FishSpawner : MonoBehaviour
                 return 1; // Score for big fish
             case "bottle": // Negative score for bad items
             case "baggy":
-            case "urchin":
-            case "coal":
-            case "seaweed":
             case "dead":
                 return -1; // Subtract score for these items
             default:

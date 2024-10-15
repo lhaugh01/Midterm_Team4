@@ -22,7 +22,7 @@ public class LossSceneHandler : MonoBehaviour
         bigFishText.text = GameHandler.caughtBig + "/" + GameHandler.totalBig;
         trashFishText.text = GameHandler.caughtTrash + "/" +
                                 GameHandler.totalTrash;
-        scoreText.text = "Total Earned: $" + GameHandler.playerScore;
-        totalItemsText.text = "Total Items: " + GameHandler.totalItems;
+        scoreText.text = "" + GameHandler.playerScore;
+        totalItemsText.text = "" + GameHandler.totalItems;
     }
 }
